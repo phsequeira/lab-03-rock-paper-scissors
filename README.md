@@ -26,6 +26,7 @@ create function for computer choice of RPS
     -3 is scissors
 use querySelector
     - imput:checked from css
+    -grab in eventlistener 
 didUserWin function
     -function to mark wins
     -function to mark loss
