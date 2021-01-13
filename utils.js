@@ -6,18 +6,7 @@ const drawSpan = document.getElementById('draw');
 const winSpan = document.getElementById('win');
 const lossSpan = document.getElementById('loss');
 
-export function makeRPS(computerThrow) {
-    if (computerThrow === 1) {
-        return 'rock';
-    }
-    else if (computerThrow === 2) {
-        return 'paper';
-    }
-    else if (computerThrow === 3) {
-        return 'scissors';
-    }
-}
-export function compareChoices(userThrow, computerThrow) {
+export default function doesUserWin(userThrow, computerThrow) {
     //draw throw
     if (userThrow === computerThrow) {
         draw++;
