@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png">
+    <link
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link href="https://www.pinclipart.com/picdir/middle/51-511533_rock-paper-scissors-circle-clipart.png">
     <link href="https://www.pinclipart.com/picdir/big/51-511436_rock-paper-scissors-dell-clipart.png">
@@ -19,60 +20,70 @@
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
+            <img src="assets/big-logo.png" />
         </div>
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png" height="300px"/>
+            <img class="main-logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png"
+                height="300px" />
             <h2>
                 Welcome to Rock-paper-scissors
             </h2>
 
             <content>
-            <p>
-                The game is played where players deliver hand signals that will represent the elements of the game; rock, paper and scissors. The outcome of the game is determined by 3 simple rules:
-            </p>
-            <ul>
-                <li>Rock wins against scissors.</li>
-                <li>Scissors wins against paper.</li>
-                <li>Paper wins against rock.</li>
-            </ul>
-            <hr />
-            <label>
-                <img src="https://www.pinclipart.com/picdir/middle/51-511533_rock-paper-scissors-circle-clipart.png" height="50px">
-                <strong>Rock</strong>
-               <input type="radio" name="rps" value="rock" />
-            </label>
-            <br>
-            <label>
-                <img src="https://www.pinclipart.com/picdir/big/51-511436_rock-paper-scissors-dell-clipart.png" height="45px">
-                <strong>Paper</strong>
-               <input type="radio" name="rps" value="paper" />
-            </label>
-            <br>
-            <label>
-                <img src="https://www.clipartkey.com/mpngs/m/109-1094404_rock-paper-scissors-png.png" height="50px">
-                <strong>Scissors</strong>
-               <input type="radio" name="rps" value="scissors" />
-            </label>
-            <br>
-            <button id="throw">Throw!</button>
-            <br><br>
-            <div>Wins: <span id="win">0</span></div>
-            <div>Loss: <span id="loss">0</span></div>
-            <div>Draws: <span id="draw">0</span></div>
-            <br><br>
-            <h2>You chose: </h2><h2 id="user-choice"></h2>
-            <h2>The Computer chose: </h2><h2 id="computer-choice"></h2>
-            <br><br>
-            <h2 id="game-results"></h2>
-             
+                <p>
+                    The game is played where players deliver hand signals that will represent the elements of the game;
+                    rock, paper and scissors. The outcome of the game is determined by 3 simple rules:
+                </p>
+                <ul>
+                    <li>Rock wins against scissors.</li>
+                    <li>Scissors wins against paper.</li>
+                    <li>Paper wins against rock.</li>
+                </ul>
+                <hr />
+                <label>
+                    <img src="https://www.pinclipart.com/picdir/middle/51-511533_rock-paper-scissors-circle-clipart.png"
+                        height="50px">
+                    <strong>Rock</strong>
+                    <input type="radio" name="rps" value="rock" checked />
+                </label>
+                <br>
+                <label>
+                    <img src="https://www.pinclipart.com/picdir/big/51-511436_rock-paper-scissors-dell-clipart.png"
+                        height="45px">
+                    <strong>Paper</strong>
+                    <input type="radio" name="rps" value="paper" />
+                </label>
+                <br>
+                <label>
+                    <img src="https://www.clipartkey.com/mpngs/m/109-1094404_rock-paper-scissors-png.png" height="50px">
+                    <strong>Scissors</strong>
+                    <input type="radio" name="rps" value="scissors" />
+                </label>
+                <br>
+                <button id="throw">Throw!</button>
+                <br>
+                <button id='reset-button'>Reset</button>
+                <br><br>
+                <div>Wins: <span id="win">0</span></div>
+                <div>Loss: <span id="loss">0</span></div>
+                <div>Draws: <span id="draw">0</span></div>
+                <div>Game reset: <span id='reset-counter'>0</span></div>
+                <br><br>
+                <h2>You chose: </h2>
+                <h2 id="user-choice"></h2>
+                <h2>The Computer chose: </h2>
+                <h2 id="computer-choice"></h2>
+                <br><br>
+                <h2 id="game-results"></h2>
+
 
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; Parker's Rock-Paper-Scissors</div>
+        <div class="copy gutter-right"> &copy; Parker's Rock-Paper-Scissors</div>
     </footer>
 
     <script type="module" src="app.js"></script>
