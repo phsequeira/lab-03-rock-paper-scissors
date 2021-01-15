@@ -45,6 +45,13 @@ section {
     border: solid 2px var(--color1);
 }
 
+input:checked + img {
+    border: solid 3px black;
+}
+
+input {
+    display: none;
+}
 header {
     display: flex;
     justify-content: flex-end;
