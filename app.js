@@ -1,8 +1,10 @@
 // import functions and grab DOM elements
-import doesUserWin from './utils.js'; 
+import { doesUserWin, resetTheGame } from './utils.js';
 import getRandomThrow from './get-random-throw.js';
+
 const throwButton = document.getElementById('throw');
 
+const resetButton = document.getElementById('reset-button');
 
 const userChoice = document.getElementById('user-choice');
 
@@ -18,4 +20,6 @@ throwButton.addEventListener('click', () => {
     doesUserWin(selectedRadioButton.value, computerChoice);
 
 });
+
+resetButton.addEventListener('click', resetTheGame);
 
